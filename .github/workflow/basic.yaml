@@ -1,0 +1,14 @@
+name: Basic Github Action Pipeline
+
+on:
+
+push:
+branch:["main"]
+
+job:
+ Basic:
+runs-on:[self-hosted, Linux]
+
+steps:
+name: Write into a file
+run: echo "hello from the first github action pipeline"
